@@ -87,7 +87,6 @@
 ``` java
 package name.luoyong.hibernate.basic;
 
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -95,19 +94,14 @@ import java.util.Map;
 import name.luoyong.hibernate.basic.entity.Group;
 import name.luoyong.hibernate.basic.entity.User;
 
-import org.hibernate.LockMode;
 import org.hibernate.Query;
 import org.hibernate.SQLQuery;
-import org.hibernate.ScrollableResults;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.transform.Transformers;
 
-/**
- * Hello world!
- * 
- */
+
 public class App {
 
 	private static final SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
